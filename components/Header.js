@@ -6,6 +6,7 @@ const linkStyle = {
 
 const Header = () => (
     <div>
+        <h1>Monday Night Lights</h1>
         <Link href="/">
           <a style={linkStyle}>Home</a>
         </Link>
