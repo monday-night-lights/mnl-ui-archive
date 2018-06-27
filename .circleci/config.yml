@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  test:
     branches:
       only:
         - master
@@ -20,6 +20,6 @@ jobs:
             - node_modules
 workflows:
   version: 2
-  build:
+  test_it:
     jobs:
-      - build
+      - test
