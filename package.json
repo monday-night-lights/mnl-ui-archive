@@ -1,29 +1,30 @@
 {
   "name": "mnl-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "UI for Monday Night Lights Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "dev": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdrager/mnl-ui.git"
+    "url": "git+https://github.com/monday-night-lights/mnl-ui.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jeremy Drager",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jdrager/mnl-ui/issues"
+    "url": "https://github.com/monday-night-lights/mnl-ui/issues"
   },
-  "homepage": "https://github.com/jdrager/mnl-ui#readme",
+  "homepage": "https://github.com/monday-night-lights/mnl-ui#readme",
   "dependencies": {
     "express": "^4.16.3",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^6.0.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-markdown": "^3.3.4"
+    "react-markdown": "^3.3.4",
+    "yarn": "^1.7.0"
   }
 }

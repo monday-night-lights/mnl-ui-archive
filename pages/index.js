@@ -54,7 +54,7 @@ export default () => (
         <ul>
             {getPlayers().map((player) => (
                 <li key={player.id}>
-                    <Link as={`/p/${player.id}`} href={`/player?id=${player.id}`}>
+                    <Link as={`/p/${player.id}`} href={`/player?id=${player.id}&firstname=${player.firstname}&lastname=${player.lastname}&position=${player.position}&team=${player.team}&number=${player.number}`}>
                         <a>{player.firstname} {player.lastname}</a>
                     </Link>
                     <div>
