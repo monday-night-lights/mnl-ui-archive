@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - master
+    docker:
+      - image: circleci/node:8.11-browsers
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-npm-deps-{{ checksum "package.json" }}
+      - run: yarn
+      - run: yarn test
+      - save_cache:
+          key: v1-npm-deps-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
