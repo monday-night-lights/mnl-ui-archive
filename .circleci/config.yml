@@ -1,9 +1,7 @@
 version: 2
 jobs:
   test:
-    branches:
-      only:
-        - master
+   
     docker:
       - image: circleci/node:8.11-browsers
     working_directory: ~/repo
@@ -23,3 +21,6 @@ workflows:
   test_it:
     jobs:
       - test
+        branches:
+          only:
+            - master
