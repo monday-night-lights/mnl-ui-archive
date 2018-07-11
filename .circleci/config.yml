@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:8.11-browsers
     steps:
       - run: pwd
+      - run: cd project
       - restore_cache:
           key: v1-npm-deps-{{ checksum "package.json" }}
       - run: yarn
