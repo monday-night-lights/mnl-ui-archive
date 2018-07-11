@@ -9,9 +9,7 @@ jobs:
       - restore_cache:
           key: v1-npm-deps-{{ checksum "package.json" }}
       - run: yarn
-      - run: |
-          pwd
-          yarn test
+      - run: yarn test
       - save_cache:
           key: v1-npm-deps-{{ checksum "package.json" }}
           paths:
