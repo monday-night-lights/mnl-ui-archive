@@ -1,13 +1,10 @@
 version: 2
 jobs:
   test:
-   
+    working_directory: ~/repo
     docker:
       - image: circleci/node:8.11-browsers
-    working_directory: ~/repo
-
     steps:
-      - checkout
       - restore_cache:
           key: v1-npm-deps-{{ checksum "package.json" }}
       - run: yarn
@@ -16,8 +13,14 @@ jobs:
           key: v1-npm-deps-{{ checksum "package.json" }}
           paths:
             - node_modules
+  e2e:
+    docker:
+      - image: circleci/node:8.11-browsers
+    steps:
+      - run: echo "Saved for e2e Tests"
 workflows:
   version: 2
-  test_it:
+  all_tests:
     jobs:
       - test
+      - e2e
