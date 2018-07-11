@@ -1,7 +1,7 @@
 # MNL Hockey League UI
 
 [![Circle CI](https://circleci.com/gh/monday-night-lights/mnl-ui.svg?style=shield)](https://circleci.com/gh/monday-night-lights/mnl-ui)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1fd9bd76b3b346878975d079b8a9eb94?style=flat-square)](https://www.codacy.com/app/jdrager2/mnl-ui?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jdrager/mnl-ui&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd8a3842d7104ee584394574f9fd68e1)](https://www.codacy.com/app/monday-night-lights/mnl-ui?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=monday-night-lights/mnl-ui&amp;utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A web UI for viewing Teams, Players, Games, and more for the Monday Night
