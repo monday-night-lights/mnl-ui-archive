@@ -1,7 +1,6 @@
 version: 2
 jobs:
   test:
-    working_directory: ~/repo
     docker:
       - image: circleci/node:8.11-browsers
     steps:
